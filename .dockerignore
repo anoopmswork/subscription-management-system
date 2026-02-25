@@ -1,0 +1,10 @@
+.git
+.factory
+spec
+
+*.log
+*.out
+
+tmp
+dist
+bin
