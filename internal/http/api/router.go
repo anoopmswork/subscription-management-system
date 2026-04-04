@@ -10,7 +10,7 @@ func (h *Handler) Register(app *fiber.App) {
 	v1.Get("/health", h.health)
 	// POST /v1/customers creates a new customer account.
 	v1.Post("/customers", h.createCustomer)
-	// GET /v1/customers/:customerID fetches a customer aggregate by id.
+	// GET /v1/customers/:customerID fetches a customer aggregate by ID.
 	v1.Get("/customers/:customerID", h.getCustomer)
 	// PATCH /v1/customers/:customerID partially updates customer details.
 	v1.Patch("/customers/:customerID", h.updateCustomer)
